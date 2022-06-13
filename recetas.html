@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta author="grupo 1">
+    <title>RECEPTES</title>
+    <link rel="stylesheet" href="estils.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/kulhu-one" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="slider/sss.min.js"></script><link rel="stylesheet" href="slider/sss.css" type="text/css" media="all">
+    <script>
+      jQuery(function($) {
+        $('.slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+        });
+
+      });
+
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      $(document).ready(function() {
+
+    $('a[href=#inicio]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+    });
+    </script>
+    <style>
+    @import url('http://fonts.cdnfonts.com/css/kulhu-one');
+    </style>
+  </head>
+
+  <body>
+      <nav class="normal"><a name="inicio"></a>
+        <ul>
+          <a class="active" href="index.html"><img src="img/shortlogo.png" width="45px"></a>
+          <li style="float:right"><a class="active" href="recetas.html">RECEPTES</a></li>
+          <li style="float:right"><a class="active" href="quienes.html">QUI SOM?</a></li>
+          <li style="float:right"><a class="active" href="index.html">INICI</a></li>
+          <div class="clear"></div>
+          <!-- nuestros apartados -->
+        </ul>
+
+      </nav>
+
+
+      <nav class="mobile"><a name="inicio"> </a>
+        <div class="topnav">
+            <a href="#home" class="active" ><img src="img/shortlogo.png"><p>RECEPTES</p></a>
+          <!-- logotipo en la barra de navegación -->
+            <div id="myLinks">
+            <!-- menu hamburguesa -->
+              <a href="index.html">INICI</a>
+              <a href="quienes.html">QUI SOM?</a>
+              <a href="recetas.html">RECEPTES</a>
+            <!-- nuestros apartados -->
+            </div>
+            <!--función del javascript para abrir el menú hamburguesa-->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+
+
+
+       <div class="receptes">
+
+         <div class="title">
+           <h1>RECEPTES</h1>
+         </div>
+
+         <div class="platitos">
+           <h4 class=platitos-menu-titulo>LES NOSTRES ESPECIALITATS</h4>
+           <div class="platitos-menu">
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/borekfinal.jpg" alt="Börek" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Börek</span>
+                  <span class="platitos-item-datillo"><a class="active" href="borek.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  El Börek de formatge amb julivert, és una recepta turca deliciosa. Es tracta d'uns rotllos cruixents realitzats amb pasta tall, i farciments a base de formatges, sent perfectes com a aperitius, esmorzar o entrants.
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/lukumfinal.jpg" alt="Lukum" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Lukum</span>
+                  <span class="platitos-item-datillo"><a class="active" href="lukum.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  Compte la història que un sultà va ajuntar a tots els especialistes en confiteria de l'època per a demanar-los que creessin una recepta secreta. Després d'un ardu treball culinari, va néixer el Lokum.
+                </p>
+              </div>
+            </div>
+
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/menemenfinal.jpg" alt="Menemen" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Menemen</span>
+                  <span class="platitos-item-datillo"><a class="active" href="menemen.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  Malgrat ser un dels plats més tradicionals de la seva gastronomia, els turcs no solen valorar molt la seva qualitat. En part és pel fet que es tracta d'un plat senzill de preparar i al qual li han assignat una funció menor de complement als esmorzars dels caps de setmana.
+                </p>
+              </div>
+            </div>
+
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/falafelfinal.jpg" alt="Lukum" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Falafel</span>
+                  <span class="platitos-item-datillo"><a class="active" href="falafel.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  El Falàfel és una preparació àrab amb molts admiradors, de fet, és bastant comú entre els vegetarians pel fet que no conté ingredients d'origen animal i aporta molt sabor i amb textura a un aparedat, tal com ho faria un tros de carn.
+                </p>
+              </div>
+            </div>
+
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/durumfinal.jpg" alt="Lukum" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Durum</span>
+                  <span class="platitos-item-datillo"><a class="active" href="durum.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  Encara que avui n'hi ha de vedella, pollastre, porc... el més tradicional s'elabora amb carn de xai. Aquest és nostre Döner kebab, que vindria a significar en turc 'carn que gira, que dona voltes'.
+                </p>
+              </div>
+            </div>
+
+            <div class="platitos-item">
+              <img class="platitos-item-imagenes" src="img/comida/lahmacunfinal.jpg" alt="Lukum" >
+              <div class="platitos-item-texto">
+                <h5 class="platitos-item-heading">
+                  <span class="platitos-item-nombre">Lahmacun</span>
+                  <span class="platitos-item-datillo"><a class="active" href="lahmacun.html">Prepara-ho!</a></span>
+                </h5>
+                <p class="platitos-item-desc">
+                  La Lahmacun és una recepta tradicional de Turquia que sembla una pizza, sense formatge. Aquest plat es prepara amb la massa tradicional de la pizza, carn picada i vegetals, sent una combinació entre el menjar tradicional italià i l'àrab.
+                </p>
+              </div>
+            </div>
+           </div>
+         </div>
+
+       </div>
+
+
+       <div id="boton"><a href="#inicio"> <img src="img/globoweb.png" height= "80px"> </a></div>
+
+
+       <footer>
+             &copy; Copyright 2022 - AFIYET OLSUN
+             <div class="pie">
+               <a href="https://twitter.com/afiyetolsun22" target="_blank"><img src="img/icon/twt.png" alt="twitter"> </a> <a href="https://instagram.com/afiyet_olsun_22?igshid=YmMyMTA2M2Y=" target="_blank"><img src="img/icon/igram.png" alt="instagram"> </a>
+             </div>
+       </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+
+
+
+
+
+       </body>
+</html>

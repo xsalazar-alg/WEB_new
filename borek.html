@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta author="grupo 1">
+    <title>BOREK</title>
+    <link rel="stylesheet" href="estils.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/kulhu-one" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="slider/sss.min.js"></script><link rel="stylesheet" href="slider/sss.css" type="text/css" media="all">
+    <script>
+      jQuery(function($) {
+        $('.slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+        });
+
+      });
+
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      $(document).ready(function() {
+
+    $('a[href=#inicio]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+});
+    </script>
+    <style>
+    @import url('http://fonts.cdnfonts.com/css/kulhu-one');
+    </style>
+  </head>
+
+  <body>
+      <nav class="normal"><a name="inicio"> </a>
+        <ul>
+          <a class="active" href="index.html"><img src="img/shortlogo.png" width="45px"></a>
+          <li style="float:right"><a class="active" href="recetas.html">RECEPTES</a></li>
+          <li style="float:right"><a class="active" href="quienes.html">QUI SOM?</a></li>
+          <li style="float:right"><a class="active" href="index.html">INICI</a></li>
+          <div class="clear"></div>
+          <!-- nuestros apartados -->
+        </ul>
+
+      </nav>
+
+
+      <nav class="mobile"><a name="inicio"> </a>
+        <div class="topnav">
+            <a href="#home" class="active" ><img src="img/shortlogo.png"><p>RECEPTES</p></a>
+          <!-- logotipo en la barra de navegación -->
+            <div id="myLinks">
+            <!-- menu hamburguesa -->
+              <a href="index.html">INICI</a>
+              <a href="quienes.html">QUI SOM?</a>
+              <a href="recetas.html">RECEPTES</a>
+            <!-- nuestros apartados -->
+            </div>
+            <!--función del javascript para abrir el menú hamburguesa-->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+
+
+
+
+      <div class="receptes">
+
+        <div class="title">
+          <h1>RECEPTA BÖREK</h1>
+        </div>
+
+        <div class="platito">
+          <h4 class=platito-menu-titulo>BÖREK</h4>
+          <div class="platito-menu">
+           <div class="platito-item">
+             <div class="platito-item-imagenes">
+                 <img src="img/comida/borekfinal.jpg"/>
+             </div>
+             <div class="platito-item-texto">
+               <h5 class="platito-item-heading">
+                 <span class="platito-item-nombre">Ingredients</span>
+               </h5>
+               <p class="platito-item-ing">
+
+                 <b>Massa</b> <br>
+                 · 10 fulles de pasta tall.<br>
+                 · 600 g d’espinacs frescos i trossejats.<br>
+                 · 1 Ceba mitjana.<br>
+                 · 250 g de formatge feta.<br>
+                 · Sal i pebre.<br>
+
+                 <b>Crema</b> <br>
+                 · 125 ml de llet.<br>
+                 · 3 cullerades d’oli d’oliva verge extra.<br>
+                 · 1 ou.<br>
+                 · 2 cullerades de iogurt grec. <br>
+                 · 1 pessic de sal.<br>
+                 · Pebre negre.<br>
+                 · Formatge feta.<br> </p>
+               <h5 class="platito-item-heading">
+                 <span class="platito-item-nombre-2">Procediment</span>
+               </h5>
+                 <p class="platito-item-desc">
+                   1.  Prenem una cassola i posem la meitat de l’aigua.
+                   Ajuntem amb el sucre i cuinem a foc mitjà. <br>
+                   2.  Afegim la ratlladura de la llimona i de la taronja.
+                   Bullim durant 15 minuts aproximadament i esperem
+                   que prengui la consistència d’un almívar. <br>
+                   3.  Amb un colador i un recipient passem l’almívar i no
+                   retirarem les restes de les pells de les fruites. <br>
+                   4.  En una altra cassola, posem la gelatina i l’aigua que
+                   no s’ha fet servir. Posem al foc a temperatura baixa
+                   perquè es vagi dissolent del tot. Afegim l’almívar a
+                   la preparació anterior i cuinem en conjunt. Remenar
+                   amb una cullera.<br>
+                   5.  Prendrem una font rectangular i greixem amb oli
+                   de gira-sol o un altre oli vegetal que no tingui sabor.
+                   Abocar la barreja.<br>
+                   6.  Deixem refredar i portem a la nevera perquè se soli-
+                   difiqui. La idea és que es pugui tallar a daus.
+                 </p>
+             </div>
+           </div>
+        </div>
+      </div>
+
+
+
+       <div id="boton"><a href="#inicio"> <img src="img/globoweb.png" height= "80px"> </a></div>
+
+
+        <footer>
+
+              &copy; Copyright 2022 - AFIYET OLSUN
+              <div class="pie">
+                <a href="https://twitter.com/afiyetolsun22" target="_blank"><img src="img/icon/twt.png" alt="twitter"> </a> <a href="https://instagram.com/afiyet_olsun_22?igshid=YmMyMTA2M2Y=" target="_blank"><img src="img/icon/igram.png" alt="instagram"> </a>
+              </div>
+        </footer>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+
+  </body>
+</html>

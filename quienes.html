@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta author="grupo 1">
+    <title>QUI SOM</title>
+    <link rel="stylesheet" href="estils.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/kulhu-one" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="slider/sss.min.js"></script><link rel="stylesheet" href="slider/sss.css" type="text/css" media="all">
+    <script>
+      jQuery(function($) {
+        $('.slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.startOn : 0, // Slide to display first. Uses array notation (0 = first slide).transition : 400, // Length (in milliseconds) of the fade transition.speed : 3500, // Slideshow speed in milliseconds.showNav : true // Set to false to hide navigation arrows.
+        });
+
+      });
+
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      $(document).ready(function() {
+
+    $('a[href=#inicio]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+    });
+    </script>
+    <style>
+    @import url('http://fonts.cdnfonts.com/css/kulhu-one');
+    </style>
+  </head>
+
+
+    <body>
+        <nav class="normal"><a name="inicio"> </a>
+                <ul>
+                  <a class="active" href="index.html"><img src="img/shortlogo.png" width="45px"></a>
+                  <li style="float:right"><a class="active" href="recetas.html">RECEPTES</a></li>
+                  <li style="float:right"><a class="active" href="quienes.html">QUI SOM?</a></li>
+                  <li style="float:right"><a class="active" href="index.html">INICI</a></li>
+                  <div class="clear"></div>
+                  <!-- nuestros apartados -->
+                </ul>
+          </nav>
+
+          <nav class="mobile"></a>
+            <div class="topnav">
+              <a href="#home" class="active" ><img src="img/shortlogo.png"><p>QUI SOM?</p></a>
+              <!-- logotipo en la barra de navegación -->
+                <div id="myLinks">
+                <!-- menu hamburguesa -->
+                  <a href="index.html">INICI</a>
+                  <a href="quienes.html">QUI SOM?</a>
+                  <a href="recetas.html">RECEPTES</a>
+                <!-- nuestros apartados -->
+                </div>
+                <!--función del javascript para abrir el menú hamburguesa-->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+
+
+
+
+      <div class=presentacio>
+
+        <div class="title">
+          <h1>QUI SOM?</h1>
+        </div>
+
+
+        <div class="quisom_txt">
+          <p>Benvolguts a <b>Afiyet Olsun</b>, un restaurant que vol presentar receptes especialment dirigides a totes les persones que desitgen aprendre més sobre la gastronomia turca i estructurar els seus coneixements a la cuina. El nostre menú consta de plats curosament seleccionats per l'equip que forma <b>Afiyet Olsun</b>.
+          <br>
+          <br>
+          T'agrada el dolç? Prefereixes els salats? Ets més de verdures? Et ve de gust menjar carn? Trobarem un plat que s'adapti al teu gust, o potser posem a prova les teves papil·les gustatives amb sabors oposats. </p>
+        </div>
+
+
+        <div id="boton"><a href="#inicio"> <img src="img/globoweb.png" height= "80px"> </a></div>
+
+
+        <footer>
+              &copy; Copyright 2022 - AFIYET OLSUN
+              <div class="pie">
+                <a href="https://twitter.com/afiyetolsun22" target="_blank"><img src="img/icon/twt.png" alt="twitter"> </a> <a href="https://instagram.com/afiyet_olsun_22?igshid=YmMyMTA2M2Y=" target="_blank"><img src="img/icon/igram.png" alt="instagram"> </a>
+              </div>
+        </footer>
+
+       <script>
+         function myFunction() {
+           var x = document.getElementById("myLinks");
+           if (x.style.display === "block") {
+             x.style.display = "none";
+           } else {
+             x.style.display = "block";
+           }
+         }
+       </script>
+
+
+
+
+
+  </body>
+</html>
